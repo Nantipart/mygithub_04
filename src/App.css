@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+/* ใช้ฟอนต์ Kanit ทั่วทั้งแอป */
+
+
+/* ในไฟล์ App.css หรือไฟล์ CSS ที่ใช้ */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* กำหนดสไตล์ของ Navbar */
+.custom-navbar {
+  background-color: #053D62;
+  padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #61dafb;
+}
+
+.carousel-inner img {
+  height: 500px; /* ปรับความสูงตามต้องการ */
+  object-fit: cover; /* ปรับให้รูปภาพครอบคลุมพื้นที่ */
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* จำกัดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+  padding: 0 20px; /* เพิ่มระยะขอบด้านข้าง */
+  box-sizing: border-box;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000000;
+  transition: transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.1); /* เพิ่มเอฟเฟกต์ขยาย */
+}
+
+.carousel-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* ให้ปุ่มเลื่อนลงเมื่อหน้าจอเล็ก */
+  flex-grow: 1;
+}
+
+.filter-btn {
+  background-color: #053d62;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap; /* ป้องกันข้อความตัดบรรทัด */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #045086;
+  transition: 0.3s;
+}
+
+.carousel-section {
+  background-color: #ffffff;
+  transform: scale(1.05); /* ขยายปุ่มเมื่อ Hover */
+  padding: 20px 0;
+  border-top: 1px solid #eaeaea; /* เส้นแบ่งด้านบน */
+}
+
+.package-section {
+  padding-left: 150px; /* เพิ่มระยะห่างจากขอบ */
+  width: 100%; /* ทำให้ครอบคลุมพื้นที่ทั้งหมด */
+  text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
+}
+
+.fs-3 {
+  font-size: 4rem; /* ขนาดของข้อความ */
+  margin: 0; /* ลบระยะห่างเริ่มต้น */
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
