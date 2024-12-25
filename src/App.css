@@ -172,3 +172,121 @@ body {
 .footer{
   background-color: #053D62;
 }
+
+/* ----------------------------------------------------------------------- */
+
+/* Add your custom CSS styles here */
+.room-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 40%; /* Adjust width as needed */
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.room-info {
+  width: 60%; /* Adjust width as needed */
+  padding-left: 20px;
+}
+
+.room-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.room-rating {
+  margin-top: 10px;
+}
+
+.star {
+  color: gold;
+}
+
+.room-description {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.room-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+.room-capacity,
+.room-bed {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.room-capacity svg,
+.room-bed svg {
+  margin-right: 5px;
+}
+
+.btn-book {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------- */
+
+.room-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+/* เพิ่ม CSS อื่นๆ เพื่อปรับแต่งรูปแบบตามต้องการ */
+
+/* ------------------------------------------------------------------- */
